@@ -1,1 +1,48 @@
 
+## Dataset
+
+This project uses **synthetically generated gene expression data** designed to mimic real-world transcriptomic profiles observed in breast and lung cancer studies. The simulated dataset contains expression measurements for hundreds of genes across tumor and normal samples, enabling the demonstration of differential expression analysis, clustering, dimensionality reduction, and machine learning classification techniques.
+
+### Dataset Characteristics
+
+| Feature                 | Description                                    |
+| ----------------------- | ---------------------------------------------- |
+| Cancer Types            | Breast Cancer and Lung Cancer                  |
+| Sample Classes          | Tumor and Normal                               |
+| Data Type               | Gene Expression (RNA-Seq Inspired)             |
+| Number of Genes         | 500                                            |
+| Number of Samples       | 200                                            |
+| Tumor Samples           | 100                                            |
+| Normal Samples          | 100                                            |
+| Expression Distribution | Log-Normal                                     |
+| Biomarker Genes         | Embedded Differentially Expressed Genes (DEGs) |
+
+### Real-World Dataset Sources
+
+The analysis pipeline can be directly applied to publicly available cancer transcriptomics datasets:
+
+#### Breast Cancer
+
+* TCGA-BRCA (The Cancer Genome Atlas – Breast Invasive Carcinoma)
+* GEO Dataset: GSE42568
+
+#### Lung Cancer
+
+* TCGA-LUAD (The Cancer Genome Atlas – Lung Adenocarcinoma)
+* GEO Dataset: GSE31210
+
+### Download Links
+
+**Breast Cancer (TCGA-BRCA)**
+https://portal.gdc.cancer.gov/projects/TCGA-BRCA
+
+**Lung Cancer (TCGA-LUAD)**
+https://portal.gdc.cancer.gov/projects/TCGA-LUAD
+
+**Breast Cancer GEO Dataset (GSE42568)**
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE42568
+
+**Lung Cancer GEO Dataset (GSE31210)**
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31210
+
+> Note: The notebook currently uses simulated data for demonstration and reproducibility purposes. However, the workflow is fully compatible with real RNA-Seq and microarray gene expression datasets from TCGA, GEO, or other public repositories.
